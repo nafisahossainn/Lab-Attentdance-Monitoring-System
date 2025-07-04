@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 20px;
+}
+
+/*.head {*/
+/*    margin-bottom: 50px;*/
+/*    background-color: #bfc7c7;*/
+/*    color: #f5f7fa;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.head button {*/
+/*    background: #6ab0d8;*/
+/*    padding: 10px 20px;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    transition: background 0.3s ease;*/
+/*}*/
+
+/*.head button:hover {*/
+/*    background: #2e5063;*/
+/*}*/
+
+.head {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.head button {
+    background: #2980b9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.head button:hover {
+    background: #1c5a73;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #ebeced;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.info-line span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table thead {
+    background: #6c757d;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background: #f1f3f5;
+}
+
+.table tbody td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .info-line {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-line span {
+        margin-bottom: 10px;
+    }
+}

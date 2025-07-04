@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.head {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+}
+
+.head button {
+    background: #2980b9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.head button:hover {
+    background: #1c5a73;
+}
+
+.profile-container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container .left {
+    width: 35%;
+    background: linear-gradient(to right, #01a9ac, #01dbdf);
+    padding: 30px 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-container .left .profile-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-container .left h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-container .left p {
+    font-size: 14px;
+}
+
+.profile-container .right {
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.profile-container .right .info {
+    margin-bottom: 25px;
+}
+
+.profile-container .right .info h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-container .right .info_data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-container .right .info_data .data {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.profile-container .right .info_data .data h4 {
+    color: #34495e;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.profile-container .right .info_data .data p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container .left, .profile-container .right {
+        width: 100%;
+        padding: 20px;
+    }
+}
