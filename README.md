@@ -39,6 +39,8 @@ A comprehensive web-based student attendance management system built with PHP, M
 ## Project Structure
 
 ```
+Student Lab Attendance System/
+│
 ├── admin.php                 # Admin authentication logic
 ├── admin_login.php           # Admin login interface
 ├── authenticate.php          # User authentication handler
